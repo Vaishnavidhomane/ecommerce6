@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍 My E-Commerce Store</h1>
+    <input type="text" id="searchInput" placeholder="Search products..."/>
+  </header>
+
+  <main>
+    <section class="filters">
+      <label>Category:
+        <select id="categoryFilter">
+          <option value="">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Books">Books</option>
+        </select>
+      </label>
+
+      <label>Sort by Price:
+        <select id="priceSort">
+          <option value="default">Default</option>
+          <option value="low-high">Low to High</option>
+          <option value="high-low">High to Low</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="productsContainer" class="products"></section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Store. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
